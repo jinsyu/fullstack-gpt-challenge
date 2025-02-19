@@ -14,6 +14,9 @@ from dotenv import load_dotenv
 # 기존 환경변수 로드
 load_dotenv()
 
+os.makedirs("./.cache/files", exist_ok=True)
+os.makedirs("./.cache/embeddings", exist_ok=True)
+
 st.set_page_config(
     page_title="DocumentGPT",
     page_icon="📃",
